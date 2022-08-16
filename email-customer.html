@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" href="https://tackle.io/wp-content/uploads/2020/09/icon_wht_favicon-32x32@2x.png">
+    <link rel="icon" href="https://tackle.io/wp-content/uploads/2020/09/icon_wht_favicon-32x32@2x.png" sizes="192x192">
+    <link rel="icon" href="https://tackle.io/wp-content/uploads/2020/09/icon_wht_favicon-32x32@2x.png" sizes="32x32">
+
+
+    <title>Tackle Customer Email Template</title>
+
+    <!-- Styles for the Emails -->
+    <style>
+        :root {
+            --dark-teal: #063649;
+            --med-teal: #209DB2;
+            --bright-sun: #FFB300;
+            --buttercup: #FFE195;
+            --opal: #F3F5F5;
+            --sky: #CFEAF3;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            margin: auto;
+            font-family: 'Open Sans', sans-serif;
+            width: 100%;
+        }
+
+        .page-padding {
+            max-width: 1080px;
+            margin: 0 2rem;
+        }
+
+        section {
+            padding: 10% 0;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .white-text {
+            color: #fff;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        footer {
+            width: 100%;
+            padding: 10% 0;
+            background-color: var(--opal);
+        }
+
+        h1 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 3rem;
+            padding-bottom: 1rem;
+            margin: 0;
+            color: var(--dark-teal);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--med-teal);
+            margin: 0;
+            padding: 1rem 0;
+        }
+
+        h3 {
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 500;
+            padding: 0;
+            margin-bottom: 0;
+        }
+
+        .half {
+            width: 48%;
+            padding-right: auto;
+        }
+
+        img {
+            border-radius: 6px;
+        }
+
+        p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1rem;
+        }
+
+        .btn {
+            color: var(--dark-teal);
+            background-color: var(--bright-sun);
+            padding: .5rem 1.5rem;
+            font-size: 1.125rem;
+            margin: 2rem 0 0 0;
+            display: block;
+            width: fit-content;
+            text-decoration: none;
+            transition: all 500ms;
+            border-radius: 5px;
+        } 
+        .btn:hover {
+            background-color: var(--buttercup);
+        }
+
+        .divider {
+            height: 2px;
+            width: 80%;
+            background-color: lightgray;
+        }
+
+        .icon {
+            max-width: 22%;
+            margin-right: 2rem;
+        }
+
+        .feature-link {
+            margin: 0 0 2.5rem 0;
+        }
+
+        .feature-link-description {
+                max-width: 75%;
+                transition: all 500ms;
+            }
+        .feature-link-description:hover {
+            padding-bottom: 1rem;
+        }
+
+        .fa {
+            background-color: var(--dark-teal);
+            color: #fff;
+            padding: 1rem;
+            font-size: 2rem;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .footer-links {
+            font-size: .75rem;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 700px) {
+            .flex {
+                flex-direction: column-reverse;
+            }
+            .half {
+                width: 100%;
+            }
+
+            h1 {
+                padding: 1rem 0;
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            .feature-link {
+                flex-direction: row;
+                margin-bottom: 2rem;
+            }
+
+            .icon {
+                max-width: 100px;
+                margin-bottom: 1rem;
+            }
+
+            .feature-link-description {
+                max-width: 100%;
+            }
+
+            .fa {
+                padding: .1rem;
+                font-size: 1.5rem;
+                margin: .2rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav style="
+            width: 100%;
+            padding: 1.5rem 0;
+            background: rgb(6,54,73);
+            background: -moz-linear-gradient(180deg, rgba(6,54,73,1) 0%, rgba(32,157,178,1) 100%);
+            background: -webkit-linear-gradient(180deg, rgba(6,54,73,1) 0%, rgba(32,157,178,1) 100%);
+            background: linear-gradient(180deg, rgba(6,54,73,1) 0%, rgba(32,157,178,1) 100%);">
+        <div class="page-padding" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+            <img style="max-width: 150px;" src="assets/logo (1).png" alt="Tackle Logo">
+            <h3 class="white-text">Insert Header Here</h3>
+        </div>
+    </nav>
+
+    
+    <!-- Feature Image Right -->
+    <section class="feature-image-right page-padding flex">
+        <div class="half">
+            <h1>Lorem Ipsum dolor sit Amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis risus, euismod non viverra nec.</p>
+            <p>Consectetur adipiscing elit. Quisque risus, euismod non viverra nec.</p>
+            <a class="btn" href="#">Button</a>
+        </div>
+        
+        <div class="half">
+            <img style="max-width: 100%;" src="https://images.unsplash.com/photo-1658604663578-04634f4cb897?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="placeholder">
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    
+    <!-- featured links section -->
+    <div class="featured-links">
+        <section class="page-padding">
+            <!-- link -->
+            <a class="feature-link flex" href="#" style="text-decoration: none; color: inherit; width: 100%; justify-content: flex-start;" class="flex">
+                <img class="icon" width="max-width: 25%;" src="https://images.unsplash.com/photo-1495615080073-6b89c9839ce0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1506&q=80" alt="Placeholder Square">
+                <div class="feature-link-description">
+                    <h2>Lorem Ipsum dolor</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                </div>
+            </a>
+            <!-- link -->
+            <a class="feature-link flex" href="#" style="text-decoration: none; color: inherit; width: 100%; justify-content: flex-start;" class="flex">
+                <img class="icon" width="max-width: 25%;" src="https://images.unsplash.com/photo-1488654715439-fbf461f0eb8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="Placeholder Square">
+                <div class="feature-link-description">
+                    <h2>Lorem Ipsum dolor</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                </div>
+            </a>
+            <!-- link -->
+            <a class="feature-link flex" href="#" style="text-decoration: none; color: inherit; width: 100%; justify-content: flex-start;" class="flex">
+                <img class="icon" width="max-width: 25%;" src="https://images.unsplash.com/photo-1525351326368-efbb5cb6814d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="Placeholder Square">
+                <div class="feature-link-description">
+                    <h2>Lorem Ipsum dolor</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                </div>
+            </a>
+        </section>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Feature Image Left -->
+
+    <section class="feature-image-left page-padding flex">
+        <div class="half">
+            <img style="max-width: 100%;" src="https://images.unsplash.com/photo-1659570040966-3a66645464eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2242&q=80" alt="placeholder">
+        </div>
+
+        <div class="half">
+            <h2>Lorem Ipsum dolor sit Amet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis risus, euismod non viverra nec.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis risus, euismod non viverra nec.</p>
+            <a class="btn" style="margin-bottom: 2rem;" href="#">Button</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <!-- social buttons -->
+        <div class="page-padding" style="display: flex;">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="https://twitter.com/tackleio" class="fa fa-twitter"></a>
+            <a href="https://tackle.io/wp-content/uploads/2020/09/Youtube-hover-red@2x.png" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/tackleio_/" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/company/tackle-io/" class="fa fa-linkedin"></a>
+        </div>
+
+        <p style="text-align: center; max-width: 90%; padding: 2rem 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit vehicula dui sit amet ligula cursus.</p>
+
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a> | 
+            <a href="#">Unsubscribe</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
