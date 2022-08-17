@@ -43,7 +43,7 @@
             margin: 0 2rem;
         }
 
-        section {
+        .section {
             padding: 10% 0;
         }
 
@@ -62,7 +62,7 @@
             font-weight: bold;
         }
 
-        footer {
+        .footer {
             width: 100%;
             padding: 10% 0;
             background-color: var(--opal);
@@ -228,7 +228,7 @@
 
 <body>
     <!-- Header -->
-    <nav style="
+    <div class="nav" style="
     width: 100%;
             padding: 1.5rem 0;
             background: rgb(6,54,73);
@@ -239,11 +239,11 @@
             <a href="https://tackle.io"><img class="header-logo" src="assets/logo (1).png" alt="Tackle Logo"></a>
             <h3 class="white-text">Insert Header Here</h3>
         </div>
-    </nav>
+    </div>
 
     
     <!-- Feature Image Right -->
-    <section class="feature-image-right page-padding flex">
+    <div class="section feature-image-right page-padding flex">
         <div class="half">
             <h1>Lorem Ipsum dolor sit Amet</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis risus, euismod non viverra nec.</p>
@@ -254,14 +254,14 @@
         <div class="half">
             <img style="max-width: 100%;" src="https://images.unsplash.com/photo-1658604663578-04634f4cb897?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="placeholder">
         </div>
-    </section>
+    </div>
 
     <div class="divider"></div>
 
     
     <!-- featured links section -->
     <div class="featured-links">
-        <section class="page-padding">
+        <div class="page-padding section">
             <!-- link -->
             <a class="feature-link flex" href="#" style="text-decoration: none; color: inherit; width: 100%; justify-content: flex-start;" class="flex">
                 <img class="icon" width="max-width: 25%;" src="https://images.unsplash.com/photo-1495615080073-6b89c9839ce0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1506&q=80" alt="Placeholder Square">
@@ -286,14 +286,14 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                 </div>
             </a>
-        </section>
+        </div>
     </div>
 
     <div class="divider"></div>
 
     <!-- Feature Image Left -->
 
-    <section class="feature-image-left page-padding flex">
+    <div class="section feature-image-left page-padding flex">
         <div class="half">
             <img style="max-width: 100%;" src="https://images.unsplash.com/photo-1659570040966-3a66645464eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2242&q=80" alt="placeholder">
         </div>
@@ -304,10 +304,10 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis risus, euismod non viverra nec.</p>
             <a class="btn" style="margin-bottom: 2rem;" href="#">Button</a>
         </div>
-    </section>
+    </div>
 
     <!-- Footer -->
-    <footer style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+    <div class="footer" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
         <!-- social buttons -->
         <div class="page-padding" style="display: flex;">
             <a href="https://twitter.com/tackleio" class="fa fa-twitter"></a>
@@ -323,7 +323,7 @@
             <a href="#">Terms of Service</a> | 
             <a href="#">Unsubscribe</a>
         </div>
-    </footer>
+    </div>
 
 </body>
 
