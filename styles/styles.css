@@ -266,6 +266,18 @@ table td:nth-child(3){
     border-radius: 5px;
 }
 
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1080px;
+    padding: 1rem 0;
+}
+
+.footer-logo {
+    max-width: 100px;
+}
 
 /* mobile devices styles */
 @media screen and (max-width: 700px) {
@@ -304,5 +316,11 @@ table td:nth-child(3){
 
     th {
         font-size: 1.15rem;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding-top: 2rem;
+        text-align: center;
     }
 }
