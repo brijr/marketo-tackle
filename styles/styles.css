@@ -288,8 +288,7 @@ caption {
 }
 
 table td:nth-child(2){
-    background-color: var(--dark-teal);
-    color: #fff;
+    background-color: var(--sky);
     border-radius: 5px;
 }
 
