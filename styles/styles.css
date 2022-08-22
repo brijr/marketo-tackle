@@ -221,7 +221,49 @@ img {
 
 .right-image, .left-image {
     width: 100%;
+}
 
+table {
+    width: 100%;
+    padding: 1rem;
+}
+
+td {
+    width: 33%;
+    padding: 1rem;
+}
+
+tr {
+    margin: 0;
+    padding: 0;
+}
+
+th {
+    font-size: 1.5rem;
+    padding: 1.5rem 0;
+
+}
+
+caption {
+    display: none;
+    visibility: none;
+}
+
+.left-align {
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+table td:nth-child(2){
+    background-color: var(--dark-teal);
+    color: #fff;
+    border-radius: 5px;
+}
+
+table td:nth-child(3){
+    background-color: #fff;
+    border-radius: 5px;
 }
 
 
@@ -258,5 +300,9 @@ img {
 
     .right-image {
         margin-top: 1.5rem;
+    }
+
+    th {
+        font-size: 1.15rem;
     }
 }
