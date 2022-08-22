@@ -19,12 +19,45 @@ body {
     width: 100%;
 }
 
+h1, h2, h3, h4, h5 {
+    font-family: 'Raleway', 'Open Sans', sans-serif;
+    color: var(--dark-teal);
+}
+
+h1,.h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.white {
+    color: white;
+}
+
+.max-1080 {
+    max-width: 1080px;
+}
+
 /* Layout and Padding */
 section {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+ul {
+    padding: 0 0 0 1rem;
+}
+
+li {
+    padding: .25rem 0;
 }
 
 .container {
@@ -146,7 +179,6 @@ section {
 /* Element Styles */
 .hero-image {
     width: 100%;
-    max-height: 40rem;
 }
 
 .hero-logo {
@@ -289,6 +321,10 @@ table td:nth-child(3){
         width: 100%;
     }
 
+    .hero-logo {
+        padding-left: 2rem;
+    }
+
     .hero-image {
         height: 20rem;
     }
@@ -322,5 +358,9 @@ table td:nth-child(3){
         flex-direction: column;
         padding-top: 2rem;
         text-align: center;
+    }
+
+    .hero-container {
+        margin: 0 2rem
     }
 }
