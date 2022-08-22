@@ -180,16 +180,6 @@
             max-width: 150px;
         }
 
-        .w-full {
-            width: 100%;
-        }
-
-        .centered {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
         .speakers {  
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -203,10 +193,6 @@
             width: 150px; 
             height: 150px;
             margin-right: 2rem;
-        }
-
-        .m-auto {
-            margin: auto;
         }
 
 
@@ -230,18 +216,8 @@
         .speaker-card {
             display: flex;
             align-items: center;
-        }        
-
-        .left-bar {
-            padding-left: 1rem;
-            border-left: 2px solid var(--bright-sun);
         }
-
-        .bg-blur {
-            color: #fff;
-            backdrop-filter: blur(3px);
-            background-color: rgba(6,54,73,.6);
-        }
+        
 
         /* Media Queries */
         @media screen and (max-width: 700px) {
@@ -304,10 +280,6 @@
                 height: 100px; 
                 margin-right: 1rem;
             }
-
-            .full-bleed {
-                margin: 0 2rem;
-            }
         }
 
     </style>
@@ -317,42 +289,42 @@
 <body>
     <!-- Header -->
     <div class="nav" style="
-            width: 100%;
+    width: 100%;
             padding: 1.5rem 0;
-            background: var(--dark-teal);
+            background: rgb(6,54,73);
             background: -moz-linear-gradient(180deg, rgba(6,54,73,1) 0%, rgba(32,157,178,1) 100%);
             background: -webkit-linear-gradient(180deg, rgba(6,54,73,1) 0%, rgba(32,157,178,1) 100%);
             background: linear-gradient(180deg, rgba(6,54,73,1) 0%, rgba(32,157,178,1) 100%);">
         <div class="page-padding header-div" style="margin: auto; display: flex; justify-content: space-between; flex-wrap: wrap;">
-            <a href="https://tackle.io"><img class="header-logo" src="assets/logo (1).png" alt="Tackle Logo"></a>
+            <a href="https://tackle.io"><img class="header-logo" src="../assets/logo (1).png" alt="Tackle Logo"></a>
             <h3 class="white-text">Lorem Ipsum</h3>
         </div>
     </div>
 
     
-    <!-- Full Bleed Image -->
-    <div style="margin: auto !important; background-size: cover; min-width: 100%; background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80')">
-        <div class="bg-blur m-auto">
-            <div class="full-bleed section m-auto" style="max-width: 1080px;">
-                <h1 style="color: #fff;">Meet us at the AWS Summit</h1>
-                <div class="left-bar">
-                    <h4 style="color: #fff;">September 5-7, 2023</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
+    <!-- Feature Image Right -->
+    <div class="section feature-image-right page-padding flex">
+        <div class="half">
+            <h1>Lorem Ipsum dolor sit Amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis risus, euismod non viverra nec.</p>
+            <p>Consectetur adipiscing elit. Quisque risus, euismod non viverra nec.</p>
+            <a class="btn" href="#">Register Now</a>
+        </div>
+        
+        <div class="half">
+            <img style="max-width: 100%;" src="https://images.unsplash.com/photo-1658604663578-04634f4cb897?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="placeholder">
         </div>
     </div>
 
+    <div class="divider"></div>
+
     
-    <!-- Centered Short Content -->
-    <div class="short-content" style="text-align: center;">
+    <!-- Short Content -->
+    <div class="short-content">
         <div class="section page-padding">
             <h2>Lorem ipsum dolor sit amet</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-            <div class="centered w-full">
-                <a href="#" class="btn">Register Now</a>
-            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </div>
     </div>
 
@@ -397,62 +369,38 @@
         </div>
     </div>
 
-    <!-- Featured Links Section -->
-
-    <div class="featured-links">
-        <div class="page-padding section">
-            <!-- link -->
-            <a class="feature-link flex" href="#" style="text-decoration: none; color: inherit; width: 100%; justify-content: flex-start;" class="flex">
-                <img class="icon" width="max-width: 25%;" src="https://images.unsplash.com/photo-1495615080073-6b89c9839ce0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1506&q=80" alt="Placeholder Square">
-                <div class="feature-link-description">
-                    <h2>Lorem Ipsum dolor</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                </div>
-            </a>
-            <!-- link -->
-            <a class="feature-link flex" href="#" style="text-decoration: none; color: inherit; width: 100%; justify-content: flex-start;" class="flex">
-                <img class="icon" width="max-width: 25%;" src="https://images.unsplash.com/photo-1488654715439-fbf461f0eb8d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80" alt="Placeholder Square">
-                <div class="feature-link-description">
-                    <h2>Lorem Ipsum dolor</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
-                </div>
-            </a>
-        </div>
-    </div>
-
     <!-- Feature Image Right -->
-    <div class="bg-sky">
-        <div class="section feature-image-right page-padding flex">
-            <div class="half">
-                <h1>Lorem Ipsum dolor sit Amet</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis risus, euismod non viverra nec.</p>
-                <p>Consectetur adipiscing elit. Quisque risus, euismod non viverra nec.</p>
-                <a class="btn" href="#">Register Now</a>
-            </div>
+    <div class="section feature-image-right page-padding flex">
+        <div class="half">
+            <h1>Lorem Ipsum dolor sit Amet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis risus, euismod non viverra nec.</p>
+            <p>Consectetur adipiscing elit. Quisque risus, euismod non viverra nec.</p>
+            <a class="btn" href="#">Register Now</a>
+        </div>
         
-            <div class="half">
-                <img style="max-width: 100%;" src="https://images.unsplash.com/photo-1658604663578-04634f4cb897?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="placeholder">
-            </div>
+        <div class="half">
+            <img style="max-width: 100%;" src="https://images.unsplash.com/photo-1658604663578-04634f4cb897?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="placeholder">
         </div>
     </div>
-    
-        <!-- Footer -->
-        <div class="footer" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
-            <!-- social buttons -->
-            <div class="page-padding" style="display: flex;">
-                <a href="https://twitter.com/tackleio" class="fa fa-twitter"></a>
-                <a href="https://tackle.io/wp-content/uploads/2020/09/Youtube-hover-red@2x.png" class="fa fa-youtube"></a>
-                <a href="https://www.instagram.com/tackleio_/" class="fa fa-instagram"></a>
-                <a href="https://www.linkedin.com/company/tackle-io/" class="fa fa-linkedin"></a>
-            </div>
-            <p style="text-align: center; max-width: 90%; padding: 2rem 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit vehicula dui sit amet ligula cursus.</p>
-            <div class="footer-links">
-                <a href="#">Privacy Policy</a> |
-                <a href="#">Terms of Service</a> |
-                <a href="#">Unsubscribe</a>
-            </div>
+
+    <!-- Footer -->
+    <div class="footer" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+        <!-- social buttons -->
+        <div class="page-padding" style="display: flex;">
+            <a href="https://twitter.com/tackleio" class="fa fa-twitter"></a>
+            <a href="https://tackle.io/wp-content/uploads/2020/09/Youtube-hover-red@2x.png" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/tackleio_/" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/company/tackle-io/" class="fa fa-linkedin"></a>
         </div>
-    
+
+        <p style="text-align: center; max-width: 90%; padding: 2rem 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit vehicula dui sit amet ligula cursus.</p>
+
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a> | 
+            <a href="#">Unsubscribe</a>
+        </div>
+    </div>
 
 </body>
 

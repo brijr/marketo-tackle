@@ -238,8 +238,9 @@
         }
 
         .bg-blur {
+            color: #fff;
             backdrop-filter: blur(3px);
-            background-color: rgba(255, 255, 255, 0.4);
+            background-color: rgba(6,54,73,.6);
         }
 
         /* Media Queries */
@@ -323,44 +324,75 @@
             background: -webkit-linear-gradient(180deg, rgba(6,54,73,1) 0%, rgba(32,157,178,1) 100%);
             background: linear-gradient(180deg, rgba(6,54,73,1) 0%, rgba(32,157,178,1) 100%);">
         <div class="page-padding header-div" style="margin: auto; display: flex; justify-content: space-between; flex-wrap: wrap;">
-            <a href="https://tackle.io"><img class="header-logo" src="assets/logo (1).png" alt="Tackle Logo"></a>
+            <a href="https://tackle.io"><img class="header-logo" src="../assets/logo (1).png" alt="Tackle Logo"></a>
             <h3 class="white-text">Lorem Ipsum</h3>
         </div>
     </div>
 
     
     <!-- Full Bleed Image -->
-    <div class="page-padding section">
-        <h1>Read the Latest Product Update</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-        <img style="margin: 1rem 0 0 0;" class="w-full" src="./assets/Dashboard.png" alt="Example Dashboard Picture">
-    </div>
-
-    <div class="divider"></div>
-
-    
-    <!-- Short Content -->
-    <div class="short-content">
-        <div class="section page-padding">
-            <h2>Lorem ipsum dolor sit amet</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <div style="margin: auto !important; background-size: cover; min-width: 100%; background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80')">
+        <div class="bg-blur m-auto">
+            <div class="full-bleed section m-auto" style="max-width: 1080px;">
+                <h1 style="color: #fff;">Meet us at the AWS Summit</h1>
+                <div class="left-bar">
+                    <h4 style="color: #fff;">September 5-7, 2023</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Feature Image Right -->
-    <div class="bg-sky">
-        <div class="section feature-image-right page-padding flex">
-            <div class="half">
-                <h1>Lorem Ipsum dolor sit Amet</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis risus, euismod non viverra nec.</p>
-                <p>Consectetur adipiscing elit. Quisque risus, euismod non viverra nec.</p>
-                <a class="btn" href="#">Register Now</a>
+    
+    <!-- Centered Short Content -->
+    <div class="short-content" style="text-align: center;">
+        <div class="section page-padding">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+            <div class="centered w-full">
+                <a href="#" class="btn">Register Now</a>
             </div>
-        
-            <div class="half">
-                <img style="max-width: 100%;" src="https://images.unsplash.com/photo-1658604663578-04634f4cb897?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="placeholder">
+        </div>
+    </div>
+
+    <!-- Webinar Speakers -->
+    <div style="flex-direction: column;" class="section bg-opal">
+        <div class="speakers page-padding">
+            <!-- speaker card -->
+            <div class="speaker-card">
+                <img class="speaker-image" src="https://www.circlesusa.org/wp-content/uploads/2018/12/Headshot-Placeholder-1.png" alt="Heashot Placeholder">
+                <div style="max-width: 100%;">
+                    <h4>Sarah Anne Smith</h4>
+                    <p>Head of Cloud Marketplace, ACME Corp.</p>
+                </div>
+            </div>
+
+            <!-- speaker card -->
+            <div class="speaker-card">
+                <img class="speaker-image" src="https://www.circlesusa.org/wp-content/uploads/2018/12/Headshot-Placeholder-1.png" alt="Heashot Placeholder">
+                <div style="max-width: 100%;">
+                    <h4>Sarah Anne Smith</h4>
+                    <p>Head of Cloud Marketplace, ACME Corp.</p>
+                </div>
+            </div>
+
+            <!-- speaker card -->
+            <div class="speaker-card">
+                <img class="speaker-image" src="https://www.circlesusa.org/wp-content/uploads/2018/12/Headshot-Placeholder-1.png" alt="Heashot Placeholder">
+                <div style="max-width: 100%;">
+                    <h4>Sarah Anne Smith</h4>
+                    <p>Head of Cloud Marketplace, ACME Corp.</p>
+                </div>
+            </div>
+
+            <!-- speaker card -->
+            <div class="speaker-card">
+                <img class="speaker-image" src="https://www.circlesusa.org/wp-content/uploads/2018/12/Headshot-Placeholder-1.png" alt="Heashot Placeholder">
+                <div style="max-width: 100%;">
+                    <h4>Sarah Anne Smith</h4>
+                    <p>Head of Cloud Marketplace, ACME Corp.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -385,6 +417,22 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
                 </div>
             </a>
+        </div>
+    </div>
+
+    <!-- Feature Image Right -->
+    <div class="bg-sky">
+        <div class="section feature-image-right page-padding flex">
+            <div class="half">
+                <h1>Lorem Ipsum dolor sit Amet</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque felis risus, euismod non viverra nec.</p>
+                <p>Consectetur adipiscing elit. Quisque risus, euismod non viverra nec.</p>
+                <a class="btn" href="#">Register Now</a>
+            </div>
+        
+            <div class="half">
+                <img style="max-width: 100%;" src="https://images.unsplash.com/photo-1658604663578-04634f4cb897?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" alt="placeholder">
+            </div>
         </div>
     </div>
     
