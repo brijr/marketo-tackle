@@ -456,6 +456,12 @@ table td:nth-child(3){
         flex-wrap: wrap;
     }
 
+    .gradient-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .w-half {
         width: 100% !important;
     }
