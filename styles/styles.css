@@ -147,6 +147,10 @@ li {
     height: 100%;
 }
 
+.w-half {
+    width: 50% !important;
+}
+
 .max-w-full {
     max-width: 100%;
 }
@@ -403,8 +407,12 @@ table td:nth-child(3){
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    justify-content: center;
     align-items: center;
+}
+
+.w-540 {
+    width: 540px;
+    contain: content;
 }
 
 .content-left {
@@ -414,10 +422,28 @@ table td:nth-child(3){
     width: 100%;
 }
 
-.flex-col {
-    display: flex;
+.parent {
+    display: grid;
     width: 100%;
-    justify-content: space-between;
+    grid-template-columns: 1fr .5fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+
+.div1 { 
+    grid-area: 1 / 1 / 2 / 2;
+    padding: 2rem;
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.div2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+    padding: 2rem;
+    background-color: var(--dark-teal);
 }
 
 .w-40 {
@@ -427,6 +453,30 @@ table td:nth-child(3){
 .btn-form-right {
     width: fit-content;
     margin: 1rem 0 2rem 0;
+}
+
+.speaker-card {
+    display: flex;
+    align-items: center;
+
+}
+
+form {
+    max-width: 540px;
+    position: sticky;
+    bottom: 2rem;
+}
+
+.speaker-image {
+    max-width: 100px;
+    border-radius: 50%;
+    margin: 1rem 2rem 0 0;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
 
 
@@ -463,7 +513,7 @@ table td:nth-child(3){
     }
 
     .w-half {
-        width: 100% !important;
+        width: 100%;
     }
 
     .link-card {
@@ -517,5 +567,21 @@ table td:nth-child(3){
         margin: 0;
     }
 
+    .form-control-right {
+        width: 100%;
+        display: block;
+    }
+    
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    form {
+        position: relative;
+    }
+
+    .parent {
+        grid-template-columns: 1fr;
+    }
 
 }
