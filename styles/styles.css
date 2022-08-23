@@ -311,7 +311,7 @@ table td:nth-child(3){
 }
 
 /* mobile devices styles */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1080px) {
     .column {
         width: 100%;
     }
@@ -361,5 +361,12 @@ table td:nth-child(3){
 
     .hero-container {
         margin: 0 2rem
+    }
+
+    .icon-link-section {
+        width: 100%;
+        display: flex;
+        justify-content: center !important;
+        align-items: center;
     }
 }
