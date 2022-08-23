@@ -125,6 +125,19 @@ li {
     color: white;
 }
 
+.bg-teal-gradient {
+    background: rgb(6,54,73);
+    background: -moz-linear-gradient(90deg, rgba(6,54,73,1) 0%, rgba(255,255,255,0) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(6,54,73,1) 0%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(90deg, rgba(6,54,73,1) 0%, rgba(255,255,255,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#063649",endColorstr="#ffffff",GradientType=1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
 /* Quick Styles */
 .w-full {
     width: 100%;
