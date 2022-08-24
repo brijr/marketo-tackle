@@ -19,7 +19,7 @@ body {
     width: 100%;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h5 {
     font-family: 'Raleway', 'Open Sans', sans-serif;
     color: var(--dark-teal);
 }
@@ -34,6 +34,12 @@ h2 {
 
 h3 {
     font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: 400;
 }
 
 .white {
@@ -148,7 +154,7 @@ li {
 }
 
 .w-half {
-    width: 50% !important;
+    width: 50%;
 }
 
 .max-w-full {
@@ -463,7 +469,22 @@ table td:nth-child(3){
 form {
     max-width: 540px;
     position: sticky;
-    bottom: 2rem;
+    top: 2rem;
+}
+
+.white-text {
+    color: white;
+}
+
+.margin-small {
+    margin: .25rem 0;
+}
+
+.highlight {
+    margin: 2rem 0;
+    padding: 0 1rem;
+    border-left: 2px solid #FFB300;
+
 }
 
 .speaker-image {
@@ -513,6 +534,7 @@ form {
 
     .w-half {
         width: 100%;
+        margin: 0 2rem;
     }
 
     .link-card {
@@ -589,6 +611,10 @@ form {
 
     .gradient-flex {
         display: block;
+    }
+
+    .w-half {
+        width: auto;
     }
 
 }
