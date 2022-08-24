@@ -424,7 +424,6 @@ table td:nth-child(3){
 
 .parent {
     display: grid;
-    width: 100%;
     grid-template-columns: 1fr .5fr;
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
@@ -434,10 +433,10 @@ table td:nth-child(3){
 .div1 { 
     grid-area: 1 / 1 / 2 / 2;
     padding: 2rem;
-    max-width: 540px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
+}
+
+.w-720 {
+    width: 720px;
 }
 
 .div2 { 
@@ -581,7 +580,15 @@ form {
     }
 
     .parent {
-        grid-template-columns: 1fr;
+        display: block;    
+    }
+
+    .w-720 {
+        width: auto;
+    }
+
+    .gradient-flex {
+        display: block;
     }
 
 }
